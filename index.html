@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img  class="logo" src="imagenes/Top.svg" alt="Logo de mi página">
+    </header>
+    <main>
+        <div class="main">
+                <div class="ladoIzquierdo">
+                    <textarea class="cajaIngresoTexto"  id="texto" rows="20"  placeholder="Ingrese aquí su texto"></textarea>
+                    <div class="caja-inferior">
+                        <div class="nota"> 
+                            <img class="etiqueta" src="imagenes/bi_exclamation-circle-fill.png" alt="signo de exclamación">
+                            <p>Solo letras minúsculas y sin acento</p>
+                        </div>                     
+                        <div class="grupo-botones">
+                            <button class="btnEncriptar" type="button" onclick="encriptar();">Encriptar</button>
+                            <button class="btnDesencriptar" type="button" onclick="desencriptar();">Desencriptar</button>
+                        </div>                     
+                    </div>
+                </div>
+    
+                <div class="ladoDerecho">
+                    <img class="munheco" src="imagenes/Munheco.png" alt="munhecoDeFondo" id="imagenMunheco">
+                    <div class="cajaPequena" id="cajaPequena">
+                        <p class="cabecera">Ningún mensaje fue encontrado</p>
+                        <p class="textoMenor">Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                    <div class="cajaCopiar"  id="cajaCopiar">
+                        <textarea class="textoCopiar" type="text" id="name" rows="20" name="name"></textarea>
+                        <button class="botonCopiar" type="button" onclick="copiarTexto();">Copiar</button>
+                    </div>  
+                </div>                               
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 Realizado por Luis Bustos Todos los derechos reservados.</p>
+        </div>
+        
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

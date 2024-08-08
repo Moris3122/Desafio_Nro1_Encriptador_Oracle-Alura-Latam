@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body {
+    margin: 0;
+    background: #F3F5FC;
+    box-sizing: border-box;
+    width: 64.6%;
+}
+
+header {
+    display: flex; 
+    align-items: flex-start;
+    margin: 0;
+}
+
+.logo {
+    margin-top: 40px;
+    margin-left: 40px; 
+    width: 120px;
+    height: 48px;
+    color: #0A3871;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    text-align: center;
+    margin-top: -5.5rem;
+}
+
+.ladoIzquierdo{
+    margin-left: 240px;
+} 
+
+textarea {
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.cajaIngresoTexto{
+    border: 0;
+    width: 680px;
+    max-height: 635px;
+    margin-top: 168px;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    display: flex;
+    float: left;
+    text-transform: lowercase;
+}
+
+::placeholder{ color:#0A3871}
+    .text-area:focus{
+    outline: none;
+}
+
+.caja-inferior {
+    width: 680px;
+    margin-top: 881px;
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+
+.nota {
+    display: flex;
+    align-items: center;
+    width: 229px;
+    height: 18px;
+    margin-top: 851px;
+}
+
+.nota img{
+    margin-right: 10px; 
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+
+.nota p {
+    width: 205px;
+    height: 18px;
+    margin-bottom: 10px; 
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    color: #495057;
+}
+
+.grupo-botones {
+    display: flex;
+    flex-direction: row;
+    max-width: 680px;
+    margin-top: 16px;
+    gap: 1.5rem;
+}
+
+.btnEncriptar{
+    background-color: #0A3871;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+.btnDesencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-color: #0A3871;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+button{
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color : #4c9903;
+}
+
+.ladoDerecho{
+    border-radius: 32px;
+    margin: 40px 42px 40px 78px;
+    padding: 32px 0 0 0;
+    height: 944px;
+    width: 400px;
+    background-color: white;
+    display: flex;          
+    flex-direction: column;
+    align-items: center; 
+} 
+
+.munheco{
+    width: 336px;
+    height: 304px;
+    margin-top: 243px;
+}
+
+.cajaPequena{
+    width: 366px;
+    height: 122px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.cajaPequena .cabecera{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:Gray/gray 500;
+}
+
+.cajaPequena .textoMenor{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color:Gray/gray 400;
+    margin-top: 1rem;
+}
+
+.cajaCopiar {
+    display: none;
+    height: 944px;
+}
+
+.textoCopiar{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 25px;
+    height: 781px;
+    font-family: "Inter regular";
+    font-size: 1.5rem;
+    color: #495057;
+    border: none;
+}
+
+.botonCopiar{
+    margin: 60px 32px 32px 32px;
+    width: 336px;
+    height: 67px;
+    color: #0A3871;
+}
+
+.footer {
+    background-color: #f8f9fa; 
+    padding: 0px;             
+    text-align: center;        
+    font-family: "Inter", sans-serif; 
+    font-size: 1rem;       
+    color: #0a2136;
+    }
+
+/* tablet */
+@media (375px <= width <= 768px){
+
+    body{
+        width: 100%;
+    } 
+    
+    
+    .main {
+        display: flex;
+        flex-direction: column; 
+        margin-top: 0;
+        height: auto;
+        max-width: 768px;
+        padding: 0 60px;
+        box-sizing: border-box;
+    }
+
+    .logo{
+        width: 10%;
+        height: 3.161rem;
+        margin-top: 4.589rem;
+        margin-left: 2.5rem;
+    }
+
+    .ladoIzquierdo{
+        margin-left: 0;
+        padding: 0rem;
+    }
+
+    .cajaIngresoTexto{
+        width: 100%;
+        margin-top: 7.25rem;
+        font-size: 1.5rem;
+    }
+
+    .grupo-botones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        max-width: 680px;
+        gap: 1.5rem;
+    }
+
+    .btnEncriptar{
+        width: 332px;
+        height: 67px;
+    }
+
+    .btnDesencriptar{
+        width: 332px;
+        height: 67px;
+    }
+
+    .ladoDerecho{
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    } 
+
+    .munheco{
+        display: none;
+    }
+
+    .cajaPequena{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .cajaCopiar {
+        width: inherit;
+    }
+
+    .botonCopiar {
+        width: auto;
+    }
+}
+
+.footer{
+    width: 100%;
+}
+
+/* celular */
+@media (max-width: 375px){
+    .main {
+        flex-direction: column; 
+        margin-top: 0;
+        min-height: 933px;
+        width: 100%;
+        padding: 0 24px 0 24px;
+    }
+
+    .logo{
+        width: 1.943rem;
+        height: 3.161rem;
+        margin-top: 4.589rem;
+        margin-left: 1.5rem;
+    }
+
+    .ladoIzquierdo{
+        margin-left: 0;
+        padding: 0rem;
+    }
+
+    .cajaIngresoTexto{
+        width: 100%;
+        margin-top: 7.25rem;
+        font-size: 1.5rem;
+    }
+
+    .nota{
+        margin-top: 0;
+    }
+
+
+    .caja-inferior{
+        margin-top: 52.5rem;
+    }
+
+    .grupo-botones{
+        flex-direction: column;
+        margin-right: 1rem;
+        align-items: flex-start;
+    }
+
+    .ladoDerecho{
+        width: 20.438rem;
+        margin-left: 0rem;
+        height: 100%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    } 
+
+    .munheco{
+        display: none;
+    }
+
+    .cajaPequena{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        height: fit-content;
+    }
+
+    .cajaCopiar {
+        width: inherit;
+    }
+
+    .botonCopiar {
+        width: auto;
+    }
+}
